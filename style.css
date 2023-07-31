@@ -1,0 +1,110 @@
+*{
+    margin: 0px;
+    padding: 0px;
+} 
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    /* background:navy; */
+     background:#032035; 
+} 
+.up-file
+{
+    margin: 10px;
+}
+.up-file input[type="file"]{
+    display: none;
+    
+}
+.or
+{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+}
+.label p
+{
+    color: white;
+    height: 40px ;
+    width: 200px;
+    background-color: navy;
+    padding: 10px;
+    text-align: center;
+    margin-left: 120px;
+    cursor: pointer; 
+    
+}
+
+#container {
+    /* border: 2px solid red; */
+    width: 480px; 
+    border-radius: 20px;
+    background-color: #4b5258;
+    box-shadow: 14px 14px 20px #02284c, -14px -14px 20px #02284c;
+    display: flex;
+    flex-direction: column;
+}
+#container textarea{
+    resize: none; 
+    height: 180px;
+    width: 75%;
+    margin: auto; 
+    padding: 7px;
+    background: none;
+    border: none;
+    outline: none; 
+    box-shadow: inset 6px 6px 6px #363b3f, inset -6px -6px 6px #363b3f;
+}
+#box{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0.5rem 0rem;
+}
+#name label{
+    display: block;
+}
+#name input{
+    margin-top: 0.2rem;
+    padding: 5px;
+    box-shadow: inset 3px 3px 3px #363b3f, inset -3px 3px #363b3f;
+    background: none;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+#type label{
+    display: block;
+}
+#type select{
+    margin-top: 0.2rem;
+    padding: 5px;
+    box-shadow: inset 3px 3px 3px #363b3f, inset -3px -3px 3px #363b3f;
+    background: none;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+#btn{
+    height: 2rem;
+    width: 40%;
+    border-radius: 7px;
+    margin: 1rem auto;
+    background: none;
+    border: none;
+    cursor: pointer;
+    background-color: navy;
+    color: #fff;
+    box-shadow: 5px 5px 5px #395774, -3px -3px 5px #395774;
+    font-size: 20px;
+    transition: 0.2s all;
+    pointer-events: none;
+}
+#btn:hover{
+    transform: scale(0.97);
+}
+#container textarea:valid~#btn{
+    pointer-events: auto;
+}
